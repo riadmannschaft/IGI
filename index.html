@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Create an acount</title>
+        <style>
+           form{
+               padding-left: 400px;
+               padding-top: 150px;
+           } 
+        </style>
+        <meta name="twiter:card" content="summary_large_image">
+        <meta name="twiter:title" content="IGI">
+        <meta name="twiter:description" content="the best vedio game ever">
+        <meta name="twiter:image" content="mis.jpg">
+
+    </head>
+    <body>
+        <form>
+            <table>
+                
+                <tr>
+                    <td><label>قم بادخال اسمك هنا</label></td>
+                    <td><input type="text"/></td>
+                </tr>
+                <tr>  
+                    <td><label>قم بادخال كلمة المرور</label></td>
+                    <td><input type="password"/></td>
+                </tr>    
+            </table>
+          <label>choose the date</label>
+          <input type="date" /></br>
+          <input type="hidden" name="month" value="january"/></br>
+           Are you married<input type="checkbox" name="condition" value="yes"/></br>
+           how much you are destroyed<input type="range"/></br>
+          <input type="color" required oninvalid="error_message(this) oninput="error_message(this)/>
+          <button type="submit" required oninvalid="error_message(this)">SEND</button>
+        </form>
+        <blockquote cite="">
+            No one can defeate me
+
+        </blockquote>
+        <h1>I want to learn something new.</h1>
+        <span id="go">THOMAS MULLER</span><button onclick="save()" type="button">save</button><button onclick="edit()"  type="button">change</button>
+        <script>
+            function save(){
+                document.getElementById("go").contentEditable="false";
+            }
+            function edit(){
+                document.getElementById("go").contentEditable="true";
+            }
+            function error_message(input){
+                if(input.value == '')
+                {
+                   input.setCustomValidity('هنا الرسالة'); 
+                }
+                else if{input.setCustomValidity('please entre the right informations');}
+                else{input.setCustomValidity('');}
+
+            }
+           
+        </script>
+        <button onclick="opendialog()">read more</button>
+        <dialog id="box">
+            <img src="elephant.jpg" width="100px" lang="200px"/>
+            <button onclick="closedialog()">close</button>
+        </dialog></br>
+        <script>
+             function opendialog(){
+
+                    document.getElementById("box").setAttribute("open","true");
+               }
+             function closedialog(){
+                     document.getElementById("box").removeAttribute("open");
+                }
+        </script>
+        <marquee scrollamount="4" width="100%" height="400px" font-size="40">
+            <div><h1 style="color:black ; font-family: Georgia, 'Times New Roman', Times, serif; height: 100px;">Go and kill yourself</h2></div>
+            <div><img src="death.jpg"/></div>
+        </marquee>
+    </body>
+</html>
